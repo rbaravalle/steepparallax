@@ -303,10 +303,6 @@ window.onload = function() {
     l1.position = light1.position;
     scene.addChild( l1 );
 
-    //sphere = new THREE.Mesh(new THREE.SphereGeometry(x,y,z), mat);
-    //sphere.overdraw = true;
-    //scene.addChild(sphere);
-
 	
 	var plane = new THREE.Mesh(
 		new THREE.PlaneGeometry(10, 10),
@@ -355,7 +351,6 @@ window.onload = function() {
 
 	
         window.planeMaterial.uniforms.LightSource.value={x:x,y:y,z:z};
-        str = "X: " + x + "Y: " + y+"Z: " + z
 		render();
 		stats.update();
 		window.requestAnimFrame(main);
@@ -420,8 +415,7 @@ window.onload = function() {
 			by <a href="http://chandler.prallfamily.com" target="_blank" title="Chandler Prall's blog" alt="Chandler Prall's blog">Chandler Prall</a>
 			<br /><br />
 			image from Morgan McGuire and Max McGuire's<br /><a href="http://graphics.cs.brown.edu/games/SteepParallax/index.html" target="_blank">steep parallax</a> example
-		</p>
-        Posicion de la luz<p id="xyz"></P>
+
 	</div>
 	<div id="viewport"></div>
 	
